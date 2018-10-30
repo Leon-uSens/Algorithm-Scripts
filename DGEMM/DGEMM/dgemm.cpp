@@ -24,9 +24,9 @@ void OriginalDgemm(const std::vector<double>& matrix_a, const std::vector<double
 
 void DgemmWithAvx(const std::vector<double>& matrix_a, const std::vector<double>& matrix_b, std::vector<double>& matrix_c)
 {
-	for (int i = 0; i < kDimension; ++i)
+	for (int i = 0; i < kDimension; i += 4)
 	{
-		for (int j = 0; j < kDimension; j += 4)
+		for (int j = 0; j < kDimension; j++)
 		{
 			__m256d c_avx = _mm256_load_pd(&(matrix_c[j * kDimension + i]));
 
