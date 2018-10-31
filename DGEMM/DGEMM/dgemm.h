@@ -2,7 +2,7 @@
 
 #include <vector>
 
-constexpr int kDimension = 4;
+constexpr int kDimension = 160;
 constexpr int kSize = kDimension * kDimension;
 
 void OriginalDgemm (const std::vector<double>& matrix_a, const std::vector<double>& matrix_b, std::vector<double>& matrix_c);

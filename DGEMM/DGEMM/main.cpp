@@ -5,11 +5,12 @@
 
 int main(int argc, char** argv)
 {
-	/*std::vector<double> matrix_a(kSize, 1);
-	std::vector<double> matrix_b(kSize, 2);*/
+	std::vector<double> matrix_a(kSize, 1);
+	std::vector<double> matrix_b(kSize, 2);
 
-	std::vector<double> matrix_a{ 1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4 };
-	std::vector<double> matrix_b{ 5,6,7,8,5,6,7,8,5,6,7,8,5,6,7,8 };
+	/*std::vector<double> matrix_a{ 1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4 };
+	std::vector<double> matrix_b{ 5,6,7,8,5,6,7,8,5,6,7,8,5,6,7,8 };*/
+
 	std::vector<double> matrix_c(kSize, 0);
 
 	//OriginalDgemm(matrix_a, matrix_b, matrix_c);
